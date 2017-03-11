@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardBackgroundColor="@color/md_grey_900"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_padding_small">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_id_lbl"
+            android:textSize="@dimen/text_size_xnormal"
+            android:text="Id: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_id"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_alignBaseline="@+id/tv_user_id_lbl"
+            android:layout_toRightOf="@+id/tv_user_id_lbl"
+            android:text="xxx"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_username_lbl"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_below="@+id/tv_user_id"
+            android:text="Username: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_username"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_alignBaseline="@+id/tv_username_lbl"
+            android:layout_toRightOf="@+id/tv_username_lbl"
+            android:layout_below="@+id/tv_user_id"
+            android:text="xxx"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_first_name_lbl"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_below="@+id/tv_username"
+            android:text="First Name: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_first_name"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_alignBaseline="@+id/tv_first_name_lbl"
+            android:layout_toRightOf="@+id/tv_first_name_lbl"
+            android:layout_below="@+id/tv_username"
+            android:text="xxx"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_last_name_lbl"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_below="@+id/tv_first_name"
+            android:text="Last Name: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_last_name"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_alignBaseline="@+id/tv_last_name_lbl"
+            android:layout_toRightOf="@+id/tv_last_name_lbl"
+            android:layout_below="@+id/tv_first_name"
+            android:text="xxx"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email_lbl"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_below="@+id/tv_last_name"
+            android:text="Email: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_alignBaseline="@+id/tv_email_lbl"
+            android:layout_toRightOf="@+id/tv_email_lbl"
+            android:layout_below="@+id/tv_last_name"
+            android:text="xxx"/>
+
+        <!--<Button-->
+            <!--android:layout_width="48dp"-->
+            <!--android:background="@drawable/ic_highlight_remove_white_48x48"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_alignBottom="@+id/tv_last_name"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="60dp" />-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

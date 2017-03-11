@@ -1,0 +1,150 @@
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="starlai.dev.skeleton.ui.dashboard.DashboardFragment">
+
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+
+    android:theme="@style/AppTheme.AppbarDashboard"
+    android:layout_height="180dp">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:text="Machine: MAC-RR-123"
+                    android:textSize="@dimen/text_size_header"/>
+                <View
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/margin_padding_tiny"
+                    android:layout_marginTop="@dimen/margin_padding_tiny"
+
+                    android:background="@color/md_grey_700" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Connected"
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:textSize="@dimen/text_size_header"/>
+                <View
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="@dimen/margin_padding_tiny"
+                    android:layout_marginTop="@dimen/margin_padding_tiny"
+
+                    android:background="@color/md_grey_700" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Module: Mod ARG"
+                    android:layout_marginLeft="@dimen/margin_padding_normal"
+                    android:textSize="@dimen/text_size_header"
+                    android:layout_weight="0.60" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_normal"
+                android:layout_marginRight="@dimen/margin_padding_normal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:layout_marginEnd="@dimen/margin_padding_normal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textSize="@dimen/text_size_large"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2345"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_xxlarge"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:clipToPadding="false"
+
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textColor="@color/md_grey_200"
+                android:textSize="@dimen/text_size_xlarge"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include android:id="@+id/inc"
+        layout="@layout/cs" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_goto_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/md_brown_700"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchorGravity="center_vertical|right"
+        app:srcCompat="@drawable/ic_send_white_48x48"
+        android:layout_gravity="bottom|right" />
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
